@@ -76,6 +76,7 @@ Chat Page
 .member{
   padding: 10px;
   border-bottom: solid 1px grey;
+  cursor: pointer;
 }
 
 .member:hover{
@@ -122,7 +123,7 @@ Chat Page
 
 .message.by-user{
   background: darkgray;
-  
+
 }
 
 .try{

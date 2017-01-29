@@ -13,27 +13,13 @@
 
   <div class="member-area">
     <div class="user-info">
-      Krupali
+      <span id="username"></span>
       <span class="logout">Logout</span>
     </div>
 
     <div class="members">
-      <div class="member">
-        Aastha
-      </div>
-      <div class="member active">
-        Ashwini
-      </div>
-      <div class="member">
-        Sankalp
-      </div>
-      <div class="member">
-        Surbhi
-      </div>
-      <div class="member">
-        Abhi
-      </div>
 
+      <div class="members" id="members"></div>
     </div>
   </div>
 
@@ -42,56 +28,34 @@
     <div class="chat-info">
       Ashwini
     </div>
-    <div class="messages">
-      <div class="try"><span class="message by-user">
-        Hey
-      </span></div>
-      <div class="try"><span class="message">
-        How are u?
-      </span></div>
-      <div class="try"><span class="message by-user">
-        M good!
-      </span></div>
-      <div class="try"><span class="message">
-        What are you doing?
-      </span></div>
-      <div class="try"><span class="message by-user">
-        Hey
-      </span></div>
-      <div class="try"><span class="message">
-        How are u?
-      </span></div>
-      <div class="try"><span class="message by-user">
-        M good!
-      </span></div>
-      <div class="try"><span class="message">
-        What are you doing?
-      </span></div>
-      <div class="try"><span class="message by-user">
-        Hey
-      </span></div>
-      <div class="try"><span class="message">
-        How are u?
-      </span></div>
-      <div class="try"><span class="message by-user">
-        M good!
-      </span></div>
-      <div class="try"><span class="message">
-         What are you doing? Are you fine??? What are you doing? Are you fine???
-      </span></div>
-      <div class="try"><span class="message by-user">
-        wassup??
-      </span></div>
-      <div class="try"><span class="message">
-        What are you doing? Are you fine???
-      </span></div>
+    <div class="messages" id="messages">
+
     </div>
 
     <div class="chat-form">
-      <input type="text" class="chat-message" placeholder="Write your message here..."/>
+      <input type="hidden" id="chat-id"/>
+      <input type="text" id="message-text" class="chat-message" placeholder="Write your message here..."/>
+      <button id="send-button">Send</button>
     </div>
 
   </div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBTC_GejWbpcu_DP_Xv-KEX6v8vxRidHx0",
+      authDomain: "snappy-4b31f.firebaseapp.com",
+      databaseURL: "https://snappy-4b31f.firebaseio.com",
+      storageBucket: "snappy-4b31f.appspot.com",
+      messagingSenderId: "130009190126"
+    };
+    firebase.initializeApp(config);
+
+  </script>
+      <script type="text/javascript" src="functions.js"></script>
+      <script type="text/javascript" src="app.js"></script>
+      <script type="text/javascript" src="chat.js"></script>
 
 </body>
 </html>
